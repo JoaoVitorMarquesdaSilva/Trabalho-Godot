@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://mh5gdf4gjian"]
+
+[ext_resource type="Script" uid="uid://dire7lqqdbd8h" path="res://Scripts/Item.gd" id="1_aeh23"]
+[ext_resource type="Texture2D" uid="uid://dbdqxfjkwc4r0" path="res://Sprites/Calice/Calice (1).png" id="2_ac0u5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qqmik"]
+radius = 82.87221
+
+[node name="Item" type="Area2D" unique_id=2007835410]
+position = Vector2(109, 118)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_aeh23")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=369070310]
+position = Vector2(32.437504, 22.125002)
+scale = Vector2(0.27609903, 0.26250008)
+texture = ExtResource("2_ac0u5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=1935347359]
+scale = Vector2(1.0000001, 1.0000001)
+shape = SubResource("CircleShape2D_qqmik")
