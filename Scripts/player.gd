@@ -23,7 +23,7 @@ func _physics_process(_delta):
 
 func _atualizar_animacao(dir: Vector2):
 	if dir == Vector2.ZERO:
-		return  # parado: mantém a última direção
+		return 
 	if abs(dir.x) > abs(dir.y):
 		anim.play("direita" if dir.x > 0 else "esquerda")
 	else:

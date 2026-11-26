@@ -21,7 +21,7 @@ func _ready():
 	anim.play("normal")
 	_novo_alvo()
 
-func _physics_process(_delta):
+func _physics_process(_delta): #Chat Gpt fez essa parte de fisica
 	var dist := global_position.distance_to(player.global_position)
 	match estado:
 		Estado.PATRULHA:
